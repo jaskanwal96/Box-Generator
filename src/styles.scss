@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: gray;}
+
+.padding {
+    padding: 16px;
+}
+
+.padding-top {
+    padding-top: 16px;
+}
+
+.padding-bottom {
+    padding-bottom: 16px;
+}
+
+.padding-left {
+    padding-left: 16px;
+}
+
+.padding-right {
+    padding-right: 16px;
+}
+
+.padding-hr {
+    @extend .padding-left;
+    @extend .padding-right;
+}
+
+.padding-vr {
+    @extend .padding-top;
+    @extend .padding-bottom;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.full-width {
+    width: 100%;
+}

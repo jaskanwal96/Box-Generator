@@ -11,11 +11,11 @@ Run `ng serve` and the project will run at `http://localhost:4200/box-generator`
 # Use the box generator
 
 Create a box using `Add Box` Button and the boxes will be created in a boundary and you can use your keys to move these boxes
-    W -> UP
-    S -> DOWN
-    A -> LEFT
-    D -> RIGHT
-    DELETE -> Delete the box
+    W -> UP</br>
+    S -> DOWN</br>
+    A -> LEFT</br>
+    D -> RIGHT</br>
+    DELETE -> Delete the box</br>
 The new box will always overlap the previous boxes.
 
 ## Build

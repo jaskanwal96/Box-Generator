@@ -1,0 +1,26 @@
+.box {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+    .id {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+    .name {
+        font-size: 0.7rem;
+    }
+}
+.box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    background: darken(lightblue, 0.2);
+}
+
+.box:after {
+    background: darken(lightblue, 0.7);
+}

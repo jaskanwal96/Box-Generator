@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./theme/themes.scss";
+@import "~@angular/material/theming";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: gray;}
@@ -37,6 +39,42 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
     display: flex;
 }
 
+.display-flex-column {
+    @extend .display-flex;
+    flex-direction: column;
+}
+
+.centered-flex {
+    @extend .display-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.centered-flex-column {
+    @extend .display-flex-column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .full-width {
     width: 100%;
 }
+
+.fg-primary {
+    color: mat-color($app-primary);
+}
+
+.fg-accent {
+    color: mat-color($app-accent);
+}
+
+.bg-primary {
+    background-color: mat-color($app-primary);
+}
+
+.bg-accent {
+    background-color: mat-color($app-accent);
+}
+

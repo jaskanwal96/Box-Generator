@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./box.component.scss']
 })
 export class BoxComponent implements OnInit {
-
+  @Input() boxData;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  selectBox($event) {
+    console.log($event);
+  }
 }

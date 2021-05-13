@@ -1,0 +1,7 @@
+<div class="box-generator-container">
+    <div class="row">
+        <button mat-stroked-button class="add-btn" (click)="createBox()">Add Box</button>
+        <mat-slide-toggle [(ngModel)]="checked" color="primary" class="padding-left">Keyboard Enabled</mat-slide-toggle>
+    </div>
+    <app-fence class="boundary"></app-fence>
+</div>

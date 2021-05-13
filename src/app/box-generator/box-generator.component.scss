@@ -1,0 +1,14 @@
+.box-generator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .boundary {
+        flex: 3;
+    }
+    .row {
+        padding-bottom: 32px;
+        .add-btn {
+            flex: 1;
+        }
+    }
+}

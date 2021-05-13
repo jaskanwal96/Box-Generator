@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BoxService } from '../../_providers';
 
 @Component({
   selector: 'app-fence',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FenceComponent implements OnInit {
 
-  constructor() { }
+  boxes = [];
+  constructor(private boxService: BoxService) {
+    this.boxService.createBox$.subscribe((newBox) => {
+      this.boxes.push(newBox);
+    })
+  }
 
   ngOnInit(): void {
+  }
+
+  selectBox(box) {
+    this.boxService.selectBox(box);
   }
 
 }

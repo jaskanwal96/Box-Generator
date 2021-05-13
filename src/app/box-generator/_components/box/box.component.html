@@ -1,1 +1,7 @@
-<p>box works!</p>
+<div 
+    class="box bg-primary centered-flex-column margin"
+    [attr.id]="'box-' + boxData.id"
+    [ngStyle]="{'z-index' : '' + boxData.id + '', 'left': '' + (50 + boxData.id) + '%'}">
+    <div class="id">{{boxData.id}}</div>
+    <div class="name">{{boxData.name.toUpperCase()}}</div>
+</div>
